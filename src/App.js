@@ -7,7 +7,7 @@ function App() {
     <>
     <Header/>
     <p><center><Calendar/></center></p>
-    <Content/>,<Footer/>
+    <Content/><Footer/>
     </>
   )
 }
