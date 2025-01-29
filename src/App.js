@@ -6,6 +6,8 @@ import { Calculator2 } from './calculator';
 import { EventData2 } from './event-data';
 import RefsFunc from './refs-func';
 import MessageBox from './state-func';
+import Context from './context-content'
+import {userContext} from './context'
 function App() {
   return (
     <>
@@ -15,8 +17,13 @@ function App() {
     <center><br/><Button/></center>
     <center/><br/><Calculator2/>
     <center><EventData2/></center>
-    <center><RefsFunc/></center> */}
-    <MessageBox/>
+    <center><RefsFunc/></center>
+    <MessageBox/> */}
+    <userContext.Provider value={'Tom Jerry'}>
+    <Context/>
+    </userContext.Provider>
+    
+    
     </>
   )
 }
