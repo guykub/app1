@@ -1,8 +1,8 @@
 import React from "react";
-import {userContext} from "./context"
+import {useContext} from "./context"
 
 export default function Context(){
-    let user = React.useContext(userContext)
+    let user = React.useContext(useContext)
 
     const contentStyle = {
         backgroundColor:'#ddd',
@@ -12,6 +12,6 @@ export default function Context(){
     }
 
     return(
-        <div style={contentStyle}>Hello{user}</div>
+        <div style={contentStyle}>Hello {user}</div>
     )
 }
