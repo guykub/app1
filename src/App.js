@@ -9,10 +9,12 @@ import MessageBox from './state-func';
 import Context2 from './context-content2'
 import {userContext} from './context'
 import Header2 from './context-header2';
+import Router2 from './router2';
 function App() {
-  let[user,setUser] = React.useState('')
+  // let[user,setUser] = React.useState('')
   return (
     <>
+    <Router2/>
     {/* <Header/>
     <p><center><Calendar/></center></p>
     <Content/><Footer/>
@@ -20,11 +22,11 @@ function App() {
     <center/><br/><Calculator2/>
     <center><EventData2/></center>
     <center><RefsFunc/></center>
-    <MessageBox/> */}
+    <MessageBox/>
     <userContext.Provider value={[user, setUser]}>
     <Header2/>
     <Context2/>
-    </userContext.Provider>
+    </userContext.Provider> */}
     </>
   )
 }
