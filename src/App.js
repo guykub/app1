@@ -10,12 +10,15 @@ import Context2 from './context-content2'
 import {userContext} from './context'
 import Header2 from './context-header2';
 import Router3 from './router3';
+import FormText from './form-text';
+
 function App() {
   // let[user,setUser] = React.useState('')
   return (
     <>
-    <Router3/>
-    {/* <Header/>
+    <FormText/>
+    {/* <Router3/>
+    <Header/>
     <p><center><Calendar/></center></p>
     <Content/><Footer/>
     <center><br/><Button/></center>
